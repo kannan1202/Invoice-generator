@@ -45,7 +45,7 @@ model Invoice{
   userId Int
   user User @relation(fields: [userId],references: [id])
   clientId Int
-  client Client @relation(fields: [clientId],references: [id])
+  client Client @relation(fields: [clientId],references: [id], onDelete: Cascade)
 }
 
 enum InvoiceStatus{

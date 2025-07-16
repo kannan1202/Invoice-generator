@@ -1,6 +1,6 @@
 import express from "express";
 import verifyUser from "../middlewares/authMiddleware";
-import {createInvoice,getAllInvoices,getInvoice,updateInvoice,deleteInvoice} from "../controllers/handleInvoice";
+import {createInvoice,getAllInvoices,getInvoice,updateInvoice,deleteInvoice} from "../controllers/handleInvoices";
 
 const router = express.Router();
 
